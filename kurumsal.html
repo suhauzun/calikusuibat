@@ -1,0 +1,317 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+<title>Çalıkuşu ibat | Çalıkuşu İbat Hukuk Bürosu</title>
+<meta name="DESCRIPTION" content="">
+<meta name="KEYWORDS" content="">
+<meta name="robots" content="index, follow">
+<meta name="AUTHOR" content="Webisterim Creative Technology">
+<meta name="Copyright" content="Copyright (c) 2000-2015 Webisterim Creative Technology">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta name="GOOGLEBOT" content="NOODP">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script>
+ /* $('.carousel').carousel({
+      interval: 5000 //changes the speed
+    $('.carousel').carousel('pause');
+  });*/
+
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+
+$(function(){
+
+  var toplamLi = $(".page-slide ul li").length;
+  //alert(toplamLi);
+  var liWidth = 290;
+  var toplamWidth = liWidth * toplamLi;
+  var liDeger = 0;
+  $(".page-slide ul").css("width", toplamWidth + "px");
+
+  $("a.next").click(function(){
+      if (liDeger < toplamLi-3){
+           liDeger++;
+           yeniWidth = liWidth * liDeger;
+           $(".page-slide ul").animate({marginLeft: "-" + yeniWidth + "px"}, 500);
+      }/*else {
+           liDeger--;
+           yeniWidth = liWidth * liDeger;
+           nWidth = yeniWidth / 6;
+        $(".page-slide ul").animate({marginLeft: "+" + nWidth + "px"}, 500);
+      }*/
+      return false;
+  });
+
+
+  $("a.prev").click(function(){
+      if (liDeger > 0){
+           liDeger--;
+           yeniWidth = liWidth * liDeger;
+           $(".page-slide ul").animate({marginLeft: "-" + yeniWidth + "px"}, 500);
+      }
+      return false;
+  });
+
+});
+
+</script>
+</head>
+<body id="detail">
+ <div class="black-line"><div class="wrapper">Lorem İpsum Dolar Sitamet Lorem İpsum Dolar Sitamet Lorem İpsum Dolar Sitamet </div></div>
+
+<nav class="navbar navbar-default header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">KURUMSAL</a></li>
+        <li><a href="#">EKİBİMİZ</a></li>
+        <li><a href="#">FAALİYET ALANLARIMIZ</a></li>
+        <li><a href="#">ALINAN KARARLAR</a></li>
+        <li><a href="#">İLETİŞİM</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- SABİT ALAN -->
+
+<div class="brown-line-pagein">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Hakkımızda <span class="sr-only">(current)</span></a></li>
+     
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Vizyonumuz</a></li>
+        <li><a href="#">Misyonumuz</a></li>
+        <li><a href="#">Değerlerimiz</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+
+<div class="wrapper-pagein">
+  <div class="fl left-columan">
+    <div class="page-detail-content">
+       <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+       <span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummyibh
+    euismod tincidunt ut laoreet doloremagna aliquam erat volutpat. Ut wisi enim ad
+    minim veniamquis nos trud exerci tation ullamcorper suscipit lobortis nisl ut ali
+    p ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit,sed diam nonummyibh euismod tincidunt ut laoreet doloremagna aliquam er
+    at volutpat. Ut wisi enim ad minim veniamquis nos trud exerci tation ullamcorp
+    suscipit lobortis nislut aliquip ex ea commodo consequat. </span>
+   </div>
+   <div class="green-line"></div>
+      <div class="small-contrl">
+     <a href="#" class="next"></a>
+     <a href="#" clasS="prev"></a>
+   </div>
+   <div class="page-slide">
+   <ul>
+    <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+        <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+        <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+       <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+   <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+        <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+        <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img class="fl" src="assets/images/detail-gorsel.jpg" alt="" />
+       <h4>Başlık</h4>
+        <p>İçeriklerin olduğu alan, kısa içeriklerin bulunması gerekiyor</p>
+      </a>
+    </li>
+ 
+   </ul>
+
+
+   </div>
+
+
+
+  </div>
+  <div class="fr right-columan">
+  <h4>Ekibimiz</h4>
+  <a href="#" class="team-summary">
+   <img src="assets/images/bay.png" alt="bay" class="img-circle fl">
+       <h5>Süha UZUN</h5>
+       <h5>suhauzun@gmail.com</h5>
+       <h5>0 532 200 11 46</h5>
+  </a>
+  <a href="#" class="team-summary">
+   <img src="assets/images/bayan.png" alt="bayan" class="img-circle fl">
+       <h5>Süha UZUN</h5>
+       <h5>suhauzun@gmail.com</h5>
+       <h5>0 532 200 11 46</h5>
+  </a>
+
+
+
+<div class="social-media-lft">
+<h5>SOSYAL MEDYA</h5>
+<div class="sml-line"></div>
+<a href="#"><img class="fl" src="assets/images/icon/facebook.png" alt="" /></a>
+<a href="#"><img class="fl" src="assets/images/icon/linkedin.png" alt="" /></a>
+<a href="#"><img class="fl" src="assets/images/icon/twitter.png" alt="" /></a>
+<a href="#"><img class="fl" src="assets/images/icon/ins.png" alt="" /></a>
+<a href="#"><img class="fl" src="assets/images/icon/gml.png" alt="" /></a>
+<a href="#"><img class="fl" src="assets/images/icon/youtube.png" alt="" /></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="trible"> </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+ <div class="footer-line">
+  <div class="foot-content">
+    <div class="fl ft-mn">
+      <p>KURUMSAL</p>
+      <ul>
+       <li><a href="#">- Hakkımızda</a></li>
+       <li><a href="#">- Vizyon</a></li>
+       <li><a href="#">- Misyon</a></li>
+      </ul>
+    </div>
+    <div class="fl ft-mn">
+    <p>EKİBİMİZ</p>
+      <ul>
+       <li><a href="#">- Hakkımızda</a></li>
+       <li><a href="#">- Vizyon</a></li>
+       <li><a href="#">- Misyon</a></li>
+      </ul>
+    </div>
+    <div class="fl ft-mn">
+    <p>FAALİYET ALANLARIMIZ</p>
+      <ul>
+       <li><a href="#">- Hakkımızda</a></li>
+       <li><a href="#">- Vizyon</a></li>
+       <li><a href="#">- Misyon</a></li>
+      </ul>
+    </div>
+    <div class="fl ft-mn">
+    <p>ALINAN KARARLAR</p>
+      <ul>
+       <li><a href="#">- Hakkımızda</a></li>
+       <li><a href="#">- Vizyon</a></li>
+       <li><a href="#">- Misyon</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 fr bg-cont">
+   
+     
+    <p>0 532 200 11 46</p>
+    <p>Adres Sokak No:22 Kat:3</p>
+    <p>Antalya / TÜRKİYE</p>
+    <a href="#">İLETİŞİM</a>
+
+     
+    </div>
+ </div>
+</div>
+ <div class="footer-bottom"><div class="wrapper">
+
+  
+      <form class="navbar-form navbar-left" role="search">
+        <span>Çalıkuşu & İbat Hukuk Bürosu</span>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="E-Bülten Üyeliği">
+        </div>
+        <button type="submit" class="btn btn-default">Üye Ol</button>
+      </form> 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="my-acount" href="http://www.webisterim.net" target="_blank"><i>Designer and Development<br>Webisterim.net</i></a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+
+</body>
+</html>
